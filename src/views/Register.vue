@@ -202,6 +202,7 @@ export default {
         if (!res.ok) {
           if (response.email) {
             alert(response.email);
+            throw new Error("email exist")
           } else {
             throw new Error("Network response was not ok");
           }
