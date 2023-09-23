@@ -1,0 +1,96 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --primary: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  --purple: #150e28;
+  --purple-light: #903aff;
+  --pink: #d434fe;
+  --header-height: 141px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", Roboto, sans-serif;
+  background-color: var(--purple);
+  color: #fff;
+  line-height: normal;
+  font-size: 16px;
+  font-style: normal;
+  /* text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* background-color: #1c4637; */
+  border-radius: 4px;
+  color: white;
+}
+
+button.outlined {
+  background-color: white;
+  color: var(--text-color);
+  /* border: 1px solid #1c4637; */
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 96vw !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 94vw !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90vw !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90vw !important;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1300px !important;
+  }
+}
+
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 71px;
+  }
+}
