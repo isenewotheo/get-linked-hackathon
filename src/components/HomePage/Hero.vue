@@ -95,7 +95,7 @@ export default {};
 <style scoped>
 .hero__main__wrapper {
   margin-top: var(--header-height);
-  height: 737px;
+  min-height:737px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 .hero__main {

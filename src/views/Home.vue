@@ -40,15 +40,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.homepage {
-
-  background-position: 0% 100px, 100% 300px;
-  background-image: url(@/assets/images/Purple-Lens-Flare-PNG.png),
-    url(@/assets/images/Purple-Lens-Flare-PNG.svg);
-  background-blend-mode: hard-light;
-  background-repeat: no-repeat;
-  background-size: 760px 560px;
-}
-</style>
